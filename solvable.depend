@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1314484426 source:/home/vini/Dev/cpp/workspace/solvable/tester.cpp
+	"tester.hpp"
+
+1314484934 /home/vini/Dev/cpp/workspace/solvable/tester.hpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cmath>
+	<cstring>
+	<vector>
+	<string>
+	<sstream>
+	<algorithm>
+	<set>
+	<queue>
+
+1314484910 source:/home/vini/Dev/cpp/workspace/solvable/main.cpp
+	<iostream>
+	"tester.hpp"
+
