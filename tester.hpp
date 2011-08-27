@@ -13,6 +13,8 @@
 #include <set>
 #include <queue>
 
+#define NNegative(number) NotNegative(number, __FUNCTION__, __LINE__)
+
 void WriteError(const std::string & message);
 void WriteSuccess(const std::string & message);
 void WriteSuccess();
