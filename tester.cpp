@@ -18,13 +18,23 @@ void WriteSuccess() {
     WriteSuccess("Success!");
 }
 
-void NotNegative(int num, const std::string & functionName, int line) {
+std::string BuildFunctionErrorMessage(const std::string & functionName, int line) {
+    std::stringstream out;
+    out << line;
+    return "[" + functionName + ":" + out.str() + "] ";
+}
+
+std::string ToInt(int number) {
+    std::stringstream out;
+    out << number;
+    return out.str();
+}
+
+void tsNotNegative(int num, const std::string & functionName, int line) {
     if(num < 0) {
         std::stringstream out;
         out << num;
-        std::stringstream lineOut;
-        lineOut << line;
-        std::string errorMessage = "[" + functionName + ":" + lineOut.str() + "] " + out.str() + " expected: POSITIVE. actual: NEGATIVE";
+        std::string errorMessage = BuildFunctionErrorMessage(functionName, line) + out.str() + " expected: POSITIVE. actual: NEGATIVE";
         WriteError(errorMessage);
     }
 }

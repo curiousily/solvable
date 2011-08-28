@@ -7,7 +7,9 @@ int main()
 {
 //    cout << "Hello world!" << endl;
 //    NotNegative(-1, __FUNCTION__, __LINE__);
-    NNegative(-1);
+    NotNegative(-1);
+    vector<int> v;
+    NotEmpty(v);
     WriteSuccess();
     return 0;
 }
