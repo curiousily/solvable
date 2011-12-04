@@ -15,7 +15,7 @@
 
 #define NotNegative(number) tsNotNegative(number, __FUNCTION__, __LINE__)
 #define NotEmpty(vector) tsNotEmpty(vector, __FUNCTION__, __LINE__)
-#define HasElements(vector, elementCount) tsNotNegative(vector, elementCount, __FUNCTION__, __LINE__)
+#define HasElements(vector, elementCount) tsHasElementCount(vector, elementCount, __FUNCTION__, __LINE__)
 
 void WriteError(const std::string & message);
 void WriteSuccess(const std::string & message);
@@ -33,7 +33,7 @@ void tsNotEmpty(const std::vector<Element> & v, const std::string & functionName
 }
 
 template <typename Element>
-void tsHasElements(const std::vector<Element> & v, int elementCount, const std::string & functionName, int line) {
+void tsHasElementCount(const std::vector<Element> & v, int elementCount, const std::string & functionName, int line) {
     if(v.size() != elementCount) {
         std::string errorMessage = BuildFunctionErrorMessage(functionName, line) + "incorrect element count expected: " + ToInt(elementCount) + ". actual: " + ToInt(v.size());
         WriteError(errorMessage);

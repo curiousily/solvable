@@ -19,3 +19,23 @@
 	<iostream>
 	"tester.hpp"
 
+1322993991 source:c:\documents and settings\fmi\my documents\dev\solvable\tester.cpp
+	"tester.hpp"
+
+1322993991 c:\documents and settings\fmi\my documents\dev\solvable\tester.hpp
+	<iostream>
+	<cstdio>
+	<cstdlib>
+	<cmath>
+	<cstring>
+	<vector>
+	<string>
+	<sstream>
+	<algorithm>
+	<set>
+	<queue>
+
+1322993991 source:c:\documents and settings\fmi\my documents\dev\solvable\main.cpp
+	<iostream>
+	"tester.hpp"
+
